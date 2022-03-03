@@ -1,0 +1,29 @@
+                    .mam-out {
+                        background-color: darkblue;
+                    }
+                    
+                    marquee {
+                        background-image: linear-gradient(rgb(233, 67, 211), rgb(255, 0, 76));
+                        background-color: rgb(204, 149, 149);
+                        color: rgb(4, 3, 59);
+                        text-shadow: yellow 2px 2px darkblue;
+                        text-transform: inherit;
+                        border-radius: 1%;
+                        font-size: 30px;
+                        border-color: rgb(248, 215, 215);
+                    }
+                    
+                    #blink {
+                        animation: blinker 0.6s linear infinite;
+                        background-image: linear-gradient(rgb(109, 4, 4), rgb(11, 3, 22));
+                        color: #6b0606;
+                        font-size: 30px;
+                        font-weight: bold;
+                        font-family: sans-serif;
+                    }
+                    
+                    @keyframes blinker {
+                        50% {
+                            opacity: 0;
+                        }
+                    }

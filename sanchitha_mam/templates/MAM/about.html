@@ -1,0 +1,32 @@
+{% include 'MAM/base.html' %} {% load static %} {% block content %}
+
+
+<center>
+    <div class="card mb-3" style="max-width: 840px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{% static 'images/triner.jpg' %}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">My Trinner</h5>
+                    <h5 class="card-text text-muted"><pre>
+
+            Happy Birthday Trinner
+You're more than a sports teacher to me. ...
+You tirelessly strive for greatness. ...
+You're going to need some exercise today. ...
+Hard work really does pay off. ...
+You always put the team first. ...
+You give me the strength to reach my goals. ...
+I'll carry your lessons with me always. ...
+Your lessons can be applied to everything.
+          </pre></h5>
+                    <button class="btn btn-outline-info"> <p class="card-text"><dt class="text-danger"><a href="{% url 'mam' %}">leraning.....</a></dt></p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+{% endblock content %}

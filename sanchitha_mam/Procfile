@@ -1,0 +1,1 @@
+web: gunicorn BIRTHDAY.wsgi --log-file -

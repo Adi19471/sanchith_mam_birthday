@@ -1,0 +1,46 @@
+{% include 'MAM/base.html' %} {% load static %} {% block content %}
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/first.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/twos.webp' %}" class="d-block w-100" alt="{% static 'images/first.jpg' %}">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/threes.jpg' %}" class="d-block w-100" alt="{% static 'images/first.jpg' %}">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+
+<div class="card text-center bg-mute">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+        <h5 class="card-title text-info">Special Trinner For Me</h5>
+        <h6 class="card-text text-secondary">Wishing you all the great things in life, hope this day will bring you an extra share of all that makes you happiest. Happy birthday.
+        </h6>
+        <a href="#" class="btn btn-primary text-warning">03-03-2022</a>
+    </div>
+
+</div>
+
+
+{% endblock %}
